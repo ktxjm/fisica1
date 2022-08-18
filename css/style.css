@@ -1,1 +1,530 @@
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --headersticky: #000;
+    --headerstickytext: #fff;
+    --tabcolor: #DDC5BF;
+    --tablink: #555;
+    --tablinkhover: #af9c97;
+    /* --backgroundcolor: #8A9892;  */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background-color: var(--headersticky);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: var(--headerstickytext);
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+header ul li a:hover {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.2s;
+    color: #000;
+}
+
+
+
+
+
+
+
+.showcase {
+    position: static;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+@media (max-width: 991px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec1 {
+
+    padding: 0 200px 50px;
+    padding-top: 50px;
+    background-color: var(--backgroundcolor);
+
+}
+
+.sec1 h2 {
+    font-size: 3.5em;
+}
+
+.sec1 p {
+    font-size: 1em;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+
+
+.videoi {
+    background-color: var(--backgroundcolor);
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+
+}
+
+.videoi video {
+
+    width: 720px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedorxd {
+    display: flex;
+    background-color: var(--backgroundcolor);
+    margin: 0;
+    min-width: 100%;
+    padding: 0 100px;
+}
+
+
+
+
+.sec {
+    padding: 0 100px 100px;
+    padding-top: 50px;
+    width: 80%;
+
+
+}
+
+.sec h2,
+.sec p {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    padding-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+}
+
+
+
+
+.b {
+    padding-top: 100px;
+}
+
+.b img {
+    margin-left: -100px;
+    position: static;
+    padding-top: 10px;
+}
+
+
+
+
+
+.sec2 {
+    background-color: var(--backgroundcolor);
+    padding: 50px 200px 50px;
+
+
+}
+
+.sec2 h2,
+.sec2 p {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.sec2 h2 {
+    font-size: 3.5em;
+    padding-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec3 {
+    background-color: var(--backgroundcolor);
+    padding: 0 200px 50px;
+    margin: -90px 0 0 0;
+
+
+}
+
+.sec3 h2,
+.se3c p {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.sec3 h2 {
+    font-size: 3.5em;
+    padding-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab {
+    background-color: var(--backgroundcolor);
+    padding: 100px 250px 50px;
+}
+
+
+
+.tablink {
+    background-color: var(--tablink);
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: var(--tablinkhover);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: #000;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.tabcontent h3 {
+    font-size: 3em;
+    padding: 0 20px;
+}
+
+.tabcontent p {
+    padding: 0 20px;
+}
+
+#parte1 {
+    background-color: var(--tabcolor);
+}
+
+#parte2 {
+    background-color: var(--tabcolor);
+}
+
+#parte3 {
+    background-color: var(--tabcolor);
+}
+
+#parte4 {
+    background-color: var(--tabcolor);
+}
+
+
+
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1659991409 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1659991409 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1659991409 .shape-fill {
+    fill: var(--backgroundcolor);
+}
+
+
+
+
+
+
+
+
+.contenedor-img {
+    display: flex;
+    min-width: 100%;
+    margin-bottom: 70px;
+    padding-top: 90px;
+}
+
+
+.contenedor-img h2 {
+    font-size: 3.5em;
+}
+
+.dimg1 {
+    width: 50%;
+}
+
+.dimg1 img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+}
+
+
+.dimg2 {
+    width: 50%;
+}
+
+.dimg2 img {
+    width: 400px;
+}
+
+
+
+
+
+
+.sec0 {
+
+    padding: 0 200px 50px;
+    padding-top: 50px;
+    background-color: var(--backgroundcolor);
+
+}
+
+.sec0 h2 {
+    font-size: 3.5em;
+}
+
+.sec0 p {
+    font-size: 2em;
+}
+
+.sec0 img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.imgimpacto {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+b{
+    text-transform: uppercase;
+}
